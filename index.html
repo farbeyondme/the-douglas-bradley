@@ -15,7 +15,7 @@ body{
 
 .hero{
     text-align:center;
-    padding:40px 20px;
+    padding:45px 20px;
     background:white;
 }
 
@@ -26,13 +26,23 @@ body{
 }
 
 .hero h1{
-    margin-top:20px;
+    margin-top:22px;
+    margin-bottom:10px;
     font-size:48px;
 }
 
+.hero .tagline{
+    font-size:24px;
+    color:#333;
+    font-weight:bold;
+}
+
 .hero p{
-    font-size:22px;
+    font-size:21px;
     color:#555;
+    max-width:800px;
+    margin:18px auto;
+    line-height:1.5;
 }
 
 .banner{
@@ -47,22 +57,27 @@ body{
 }
 
 .section{
-    max-width:1100px;
+    max-width:1150px;
     margin:auto;
     padding:50px 20px;
+}
+
+.section h2{
+    text-align:center;
+    font-size:34px;
 }
 
 .books{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:40px;
+    gap:35px;
 }
 
 .book{
-    width:350px;
+    width:320px;
     background:white;
-    padding:20px;
+    padding:22px;
     border-radius:12px;
     box-shadow:0 2px 10px rgba(0,0,0,.1);
     text-align:center;
@@ -71,6 +86,25 @@ body{
 .book img{
     width:100%;
     border-radius:8px;
+}
+
+.book h3{
+    font-size:24px;
+}
+
+.book p{
+    line-height:1.5;
+}
+
+.badge{
+    display:inline-block;
+    background:#f5c542;
+    color:#222;
+    padding:6px 12px;
+    border-radius:999px;
+    font-weight:bold;
+    font-size:14px;
+    margin-bottom:10px;
 }
 
 .button{
@@ -84,11 +118,16 @@ body{
     font-weight:bold;
 }
 
+.button.secondary{
+    background:#444;
+}
+
 .about{
     background:white;
     border-radius:12px;
     padding:30px;
     line-height:1.7;
+    font-size:18px;
 }
 
 footer{
@@ -113,11 +152,12 @@ footer{
 
 <h1>Douglas Bradley</h1>
 
-<p>Entrepreneur. Author. Business Builder.</p>
+<p class="tagline">
+Creator of Repeatable Entrepreneur and the 3-2-1 Today Method
+</p>
 
 <p>
-Lessons from building businesses across software,
-consulting, hospitality, and real estate.
+Lessons on building businesses, systems, and productivity that work across industries.
 </p>
 
 </div>
@@ -128,19 +168,32 @@ consulting, hospitality, and real estate.
 
 <div class="section">
 
-<h2 style="text-align:center;">Featured Books</h2>
+<h2>Books</h2>
 
 <div class="books">
 
 <div class="book">
+<span class="badge">Coming Soon</span>
+<img src="CB4388E8-326A-4CE9-AA93-309D90F7C29C2026-05-17_19-19-07_686.png">
 
+<h3>Repeatable Productivity</h3>
+
+<p>
+The 3-2-1 Today Method: A daily system for clarity, momentum, and wins.
+</p>
+
+<a class="button secondary" href="#">
+Coming Soon
+</a>
+</div>
+
+<div class="book">
 <img src="IMG_3219.png">
 
 <h3>Repeatable Entrepreneur</h3>
 
 <p>
-How to Build Success Again and Again —
-In Any Industry
+How to Build Success Again and Again — In Any Industry
 </p>
 
 <a class="button"
@@ -148,18 +201,15 @@ href="https://www.amazon.com/dp/B0H1NHYMVW"
 target="_blank">
 Buy on Amazon
 </a>
-
 </div>
 
 <div class="book">
-
 <img src="IMG_2930.jpeg">
 
 <h3>Taking It To The End Zone</h3>
 
 <p>
-A Playbook for Buying, Running,
-and Selling Your Own Bar
+A Playbook for Buying, Running, and Selling Your Own Bar
 </p>
 
 <a class="button"
@@ -167,20 +217,15 @@ href="https://www.amazon.com/dp/B0GQNZ7B2K"
 target="_blank">
 Buy on Amazon
 </a>
-
 </div>
 
 </div>
-
 </div>
 
 <div class="section">
 
-
-
 <div class="about">
-<h2 style="text-align:center;">About Douglas Bradley</h2>
-
+<h2>About Douglas Bradley</h2>
 
 <p>
 Douglas Bradley is a <strong>Repeatable Entrepreneur</strong> whose career spans software, hospitality, consulting, and real estate — four industries, four different business models, and one unifying operating system.
@@ -195,14 +240,10 @@ Operating the restaurants remotely from Florida, Bradley built centralized syste
 </p>
 
 </div>
-
 </div>
 
 <footer>
-
-Contact:
-thedouglasbradley@gmail.com
-
+Contact: thedouglasbradley@gmail.com
 </footer>
 
 </body>
